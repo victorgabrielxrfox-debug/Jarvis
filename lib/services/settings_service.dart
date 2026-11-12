@@ -250,7 +250,7 @@ class SettingsService extends ChangeNotifier {
   /// Studio Neural Voice (Edge-TTS) for ultra-realistic human speech.
   /// Defaults to en-GB-RyanNeural (Paul Bettany British JARVIS style).
   String get jarvisNeuralVoice =>
-      _prefs?.getString('jarvis_neural_voice') ?? 'en-GB-RyanNeural';
+      _prefs?.getString('jarvis_neural_voice') ?? 'pt-BR-AntonioNeural';
   Future<void> setJarvisNeuralVoice(String value) async {
     await _prefs?.setString('jarvis_neural_voice', value);
     notifyListeners();
